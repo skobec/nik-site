@@ -14,6 +14,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/css/params.scss";
+
   .video__block__container {
     margin-bottom: 97px;
   }
@@ -33,4 +35,28 @@ export default {
     margin: 0 auto;
     overflow: hidden;
   }
+
+@media (max-width: $tablet-size) {
+  .video__block__container {
+    margin-bottom: 38px;
+  }
+  .title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-top: 38px;
+    margin-bottom: 30px;
+  }
+  .video__block {
+    height: 255px;
+  }
+}
+
+@media (max-width: $mobile-size) {
+  .video__block {
+    height: 174px;
+  }
+}
 </style>
