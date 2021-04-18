@@ -427,6 +427,9 @@ export default {
   }
 
   @media (max-width: $tablet-size) {
+    .slick-slider {
+      margin: 0 -15px;
+    }
     .slide__item {
       padding: 22px;
       margin-bottom: 16px;
